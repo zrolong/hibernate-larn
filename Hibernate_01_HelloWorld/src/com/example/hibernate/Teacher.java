@@ -4,37 +4,40 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * ÒýÈëjavaxÏÂµÄ°ü
- * 
- * @author ±±·ÉµÄºòÄñ
+ * ï¿½ï¿½ï¿½ï¿½javaxï¿½ÂµÄ°ï¿½
  *
+ * @author ï¿½ï¿½ï¿½ÉµÄºï¿½ï¿½ï¿½
  */
 @Entity
 public class Teacher {
-	
-	@Id
-	private int id;
-	
-	private String name;
-	private String title;
-	
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
+
+    @Id
+    private int id;
+
+    private String name;
+    private String title;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

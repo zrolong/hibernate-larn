@@ -10,8 +10,7 @@ public class TeacherTest {
 		Teacher t = new Teacher();
 		t.setId(1);
 		t.setName("t1");
-		t.setTitle("middle");
-		
+
 		SessionFactory sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
 		Session session = sessionFactory.getCurrentSession();
 		session.beginTransaction();

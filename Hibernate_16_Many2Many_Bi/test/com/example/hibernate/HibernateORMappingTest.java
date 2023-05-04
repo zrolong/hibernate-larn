@@ -8,22 +8,24 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class HibernateORMappingTest {
-	private static SessionFactory sessionFactory;
-	
-	@BeforeClass
-	public static void beforeClass() {
-			sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
-	}
-	@AfterClass
-	public static void afterClass() {
-		sessionFactory.close();
-	}
-	@Test
-	public void testSchemaExport() {
-		new SchemaExport(new AnnotationConfiguration().configure()).create(false, true);
-	}
-	
-	public static void main(String[] args) {
-		beforeClass();
-	}
+    private static SessionFactory sessionFactory;
+
+    @BeforeClass
+    public static void beforeClass() {
+        sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
+    }
+
+    @AfterClass
+    public static void afterClass() {
+        sessionFactory.close();
+    }
+
+    @Test
+    public void testSchemaExport() {
+        new SchemaExport(new AnnotationConfiguration().configure()).create(false, true);
+    }
+
+    public static void main(String[] args) {
+        beforeClass();
+    }
 }
